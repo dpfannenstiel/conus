@@ -10,6 +10,9 @@ import Foundation
 /// A Wolfram Code
 /// See https://en.m.wikipedia.org/wiki/Wolfram_code
 struct WolframCode {
+    /// Rule 30
+    static var rule30 = try! WolframCode(intArray: [0, 0, 0, 1, 1, 1, 1, 0])
+
     enum Errors: Error {
         /// Thrown when the number of elements in the constructor parameter does not match requirements
         case invalidArraySize(Int)
@@ -18,7 +21,7 @@ struct WolframCode {
     }
 
     /// The bit array for the Wolfram Code.
-    private let bitArray: Bits
+    let bitArray: Bits
 
     /// The code value
     var code: UInt8 {
@@ -56,4 +59,11 @@ struct WolframCode {
         return bitArray[Int(index)]
     }
 
+    /// Create a new WolframCode after toggling a single bit
+    /// - parameter index: Index of the bit to toggle
+    /// - returns: A copy of the code with a new bit sequence
+    func toggle(_ index: Int) -> WolframCode {
+        // `bitArray` is guaranteed to have 8 elements by the constructor, so this is safe for now
+        try! WolframCode(bitArray: bitArray.reversed().toggle(bitArray.endIndex - 1 - index))
+    }
 }

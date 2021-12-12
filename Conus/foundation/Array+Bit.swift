@@ -20,4 +20,13 @@ extension Array where Element == Bit {
                 partialResult = partialResult | value
             }
     }
+
+    /// Toggle the element for the index
+    /// - parameter index: Index of the element to toggle
+    /// - returns: An array with a single element toggled, if the index is in the indices.
+    func toggle(_ index: Int) -> [Bit] {
+        enumerated().map { idx, element in
+            idx == index ? element.toggle() : element
+        }
+    }
 }

@@ -77,4 +77,22 @@ class WolframCodeTestCase: ConusTestCase {
         XCTAssertNil(rule30[[.on]])
         XCTAssertNil(rule30[[.on, .on]])
     }
+
+    func testBitToggle() {
+        XCTAssertEqual(.on, Bit.off.toggle())
+        XCTAssertEqual(.off, Bit.on.toggle())
+        let source: Bits = [.off, .off, .off]
+        XCTAssertEqual([.on, .off, .off], source.toggle(0))
+        XCTAssertEqual([.off, .on, .off], source.toggle(1))
+        XCTAssertEqual([.off, .off, .on], source.toggle(2))
+        XCTAssertEqual([.off, .off, .off], source.toggle(3))
+    }
+
+    func testWolframToggle() throws {
+        let rule30 = try WolframCode(intArray: rule30Array)
+        XCTAssertEqual([.off, .on, .on, .on, .on, .off, .off, .off], rule30.bitArray)
+        XCTAssertEqual(30, rule30.code)
+        XCTAssertEqual([.on, .on, .on, .on, .on, .off, .off, .off], rule30.toggle(0).bitArray)
+        XCTAssertEqual(31, rule30.toggle(0).code)
+    }
 }

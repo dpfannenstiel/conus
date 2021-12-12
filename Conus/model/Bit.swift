@@ -13,6 +13,16 @@ enum Bit: UInt8 {
     case off = 0
     /// The bit is on
     case on  = 1
+
+    /// Toggle the value of a bit
+    func toggle() -> Bit {
+        switch self {
+        case .on:
+            return .off
+        case .off:
+            return .on
+        }
+    }
 }
 
 /// An array of bits. `Bits` should always be Little Endian. This allows the index to be the power of the bit when
