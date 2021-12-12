@@ -94,3 +94,14 @@ func mid(_ value: Int) -> Int {
     (value / 2)
 }
 
+enum GenerationDefaults {
+    /// The default generation
+    static let `default` = 30.0
+    /// The minimum generation
+    static let min = 20.0
+    /// The maximum generation
+    static let max = 50.0
+}
+
+
+

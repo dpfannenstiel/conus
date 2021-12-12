@@ -20,6 +20,8 @@
 		DA7EBF182765954200CA69DB /* WolframCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF172765954200CA69DB /* WolframCode.swift */; };
 		DA7EBF1A2765A09000CA69DB /* RuleGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF192765A09000CA69DB /* RuleGenerationTests.swift */; };
 		DA7EBF1C27664C8100CA69DB /* Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF1B27664C8100CA69DB /* Generation.swift */; };
+		DA7EBF2127668BA200CA69DB /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF2027668BA200CA69DB /* EditView.swift */; };
+		DA7EBF232766918F00CA69DB /* WolframCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF222766918F00CA69DB /* WolframCodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		DA7EBF172765954200CA69DB /* WolframCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframCode.swift; sourceTree = "<group>"; };
 		DA7EBF192765A09000CA69DB /* RuleGenerationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleGenerationTests.swift; sourceTree = "<group>"; };
 		DA7EBF1B27664C8100CA69DB /* Generation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generation.swift; sourceTree = "<group>"; };
+		DA7EBF1F27668B2F00CA69DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA7EBF2027668BA200CA69DB /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		DA7EBF222766918F00CA69DB /* WolframCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframCodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +111,13 @@
 		DA7EBEE427652D9100CA69DB /* Conus */ = {
 			isa = PBXGroup;
 			children = (
+				DA7EBF1F27668B2F00CA69DB /* Info.plist */,
 				DA7EBF14276594E300CA69DB /* foundation */,
 				DA7EBF112765948600CA69DB /* model */,
 				DA7EBEE527652D9100CA69DB /* ConusApp.swift */,
 				DA7EBEE727652D9100CA69DB /* ContentView.swift */,
+				DA7EBF2027668BA200CA69DB /* EditView.swift */,
+				DA7EBF222766918F00CA69DB /* WolframCodeView.swift */,
 				DA7EBEE927652D9200CA69DB /* Assets.xcassets */,
 				DA7EBEEB27652D9200CA69DB /* Preview Content */,
 			);
@@ -295,7 +303,9 @@
 				DA7EBF1C27664C8100CA69DB /* Generation.swift in Sources */,
 				DA7EBF132765949800CA69DB /* Bit.swift in Sources */,
 				DA7EBF182765954200CA69DB /* WolframCode.swift in Sources */,
+				DA7EBF2127668BA200CA69DB /* EditView.swift in Sources */,
 				DA7EBEE627652D9100CA69DB /* ConusApp.swift in Sources */,
+				DA7EBF232766918F00CA69DB /* WolframCodeView.swift in Sources */,
 				DA7EBF162765950C00CA69DB /* Array+Bit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,12 +472,13 @@
 				DEVELOPMENT_TEAM = XC37WA9QLK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Conus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,12 +503,13 @@
 				DEVELOPMENT_TEAM = XC37WA9QLK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Conus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

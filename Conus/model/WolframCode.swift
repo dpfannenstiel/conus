@@ -9,9 +9,33 @@ import Foundation
 
 /// A Wolfram Code
 /// See https://en.m.wikipedia.org/wiki/Wolfram_code
-struct WolframCode {
+struct WolframCode: Hashable {
     /// Rule 30
     static var rule30 = try! WolframCode(intArray: [0, 0, 0, 1, 1, 1, 1, 0])
+    /// Rule 86
+    static var rule86 = try! WolframCode(intArray: [0, 1, 0, 1, 0, 1, 1, 0])
+    /// Rule 135
+    static var rule135 = try! WolframCode(intArray: [1, 0, 0, 0, 0, 1, 1, 1])
+    /// Rule 149
+    static var rule149 = try! WolframCode(intArray: [1, 0, 0, 1, 0, 1, 0, 1])
+
+    enum RulesModels {
+        /// A list of rule names
+        static let ruleNames = [
+            "Rule 30",
+            "Rule 86",
+            "Rule 135",
+            "Rule 149"
+        ]
+
+        /// Rule names paired with rules
+        static let rules = [
+            "Rule 30": WolframCode.rule30,
+            "Rule 86": WolframCode.rule86,
+            "Rule 135": WolframCode.rule135,
+            "Rule 149": WolframCode.rule149
+        ]
+    }
 
     enum Errors: Error {
         /// Thrown when the number of elements in the constructor parameter does not match requirements
