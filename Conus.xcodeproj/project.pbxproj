@@ -14,6 +14,10 @@
 		DA7EBEF727652D9200CA69DB /* ConusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBEF627652D9200CA69DB /* ConusTests.swift */; };
 		DA7EBF0127652D9200CA69DB /* ConusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF0027652D9200CA69DB /* ConusUITests.swift */; };
 		DA7EBF0327652D9200CA69DB /* ConusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF0227652D9200CA69DB /* ConusUITestsLaunchTests.swift */; };
+		DA7EBF1027652F1400CA69DB /* WolframCodeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF0F27652F1400CA69DB /* WolframCodeTestCase.swift */; };
+		DA7EBF132765949800CA69DB /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF122765949800CA69DB /* Bit.swift */; };
+		DA7EBF162765950C00CA69DB /* Array+Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF152765950C00CA69DB /* Array+Bit.swift */; };
+		DA7EBF182765954200CA69DB /* WolframCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF172765954200CA69DB /* WolframCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		DA7EBEFC27652D9200CA69DB /* ConusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7EBF0027652D9200CA69DB /* ConusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConusUITests.swift; sourceTree = "<group>"; };
 		DA7EBF0227652D9200CA69DB /* ConusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA7EBF0F27652F1400CA69DB /* WolframCodeTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframCodeTestCase.swift; sourceTree = "<group>"; };
+		DA7EBF122765949800CA69DB /* Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit.swift; sourceTree = "<group>"; };
+		DA7EBF152765950C00CA69DB /* Array+Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Bit.swift"; sourceTree = "<group>"; };
+		DA7EBF172765954200CA69DB /* WolframCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,8 @@
 		DA7EBEE427652D9100CA69DB /* Conus */ = {
 			isa = PBXGroup;
 			children = (
+				DA7EBF14276594E300CA69DB /* foundation */,
+				DA7EBF112765948600CA69DB /* model */,
 				DA7EBEE527652D9100CA69DB /* ConusApp.swift */,
 				DA7EBEE727652D9100CA69DB /* ContentView.swift */,
 				DA7EBEE927652D9200CA69DB /* Assets.xcassets */,
@@ -114,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				DA7EBEF627652D9200CA69DB /* ConusTests.swift */,
+				DA7EBF0F27652F1400CA69DB /* WolframCodeTestCase.swift */,
 			);
 			path = ConusTests;
 			sourceTree = "<group>";
@@ -125,6 +136,23 @@
 				DA7EBF0227652D9200CA69DB /* ConusUITestsLaunchTests.swift */,
 			);
 			path = ConusUITests;
+			sourceTree = "<group>";
+		};
+		DA7EBF112765948600CA69DB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EBF122765949800CA69DB /* Bit.swift */,
+				DA7EBF172765954200CA69DB /* WolframCode.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DA7EBF14276594E300CA69DB /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EBF152765950C00CA69DB /* Array+Bit.swift */,
+			);
+			path = foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7EBEE827652D9100CA69DB /* ContentView.swift in Sources */,
+				DA7EBF132765949800CA69DB /* Bit.swift in Sources */,
+				DA7EBF182765954200CA69DB /* WolframCode.swift in Sources */,
 				DA7EBEE627652D9100CA69DB /* ConusApp.swift in Sources */,
+				DA7EBF162765950C00CA69DB /* Array+Bit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7EBF1027652F1400CA69DB /* WolframCodeTestCase.swift in Sources */,
 				DA7EBEF727652D9200CA69DB /* ConusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
