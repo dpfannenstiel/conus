@@ -12,8 +12,6 @@
 		DA7EBEEA27652D9200CA69DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7EBEE927652D9200CA69DB /* Assets.xcassets */; };
 		DA7EBEED27652D9200CA69DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7EBEEC27652D9200CA69DB /* Preview Assets.xcassets */; };
 		DA7EBEF727652D9200CA69DB /* ConusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBEF627652D9200CA69DB /* ConusTests.swift */; };
-		DA7EBF0127652D9200CA69DB /* ConusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF0027652D9200CA69DB /* ConusUITests.swift */; };
-		DA7EBF0327652D9200CA69DB /* ConusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF0227652D9200CA69DB /* ConusUITestsLaunchTests.swift */; };
 		DA7EBF1027652F1400CA69DB /* WolframCodeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF0F27652F1400CA69DB /* WolframCodeTestCase.swift */; };
 		DA7EBF132765949800CA69DB /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF122765949800CA69DB /* Bit.swift */; };
 		DA7EBF162765950C00CA69DB /* Array+Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBF152765950C00CA69DB /* Array+Bit.swift */; };
@@ -32,13 +30,6 @@
 			remoteGlobalIDString = DA7EBEE127652D9100CA69DB;
 			remoteInfo = Conus;
 		};
-		DA7EBEFD27652D9200CA69DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA7EBEDA27652D9100CA69DB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA7EBEE127652D9100CA69DB;
-			remoteInfo = Conus;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +40,6 @@
 		DA7EBEEC27652D9200CA69DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA7EBEF227652D9200CA69DB /* ConusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7EBEF627652D9200CA69DB /* ConusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConusTests.swift; sourceTree = "<group>"; };
-		DA7EBEFC27652D9200CA69DB /* ConusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA7EBF0027652D9200CA69DB /* ConusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConusUITests.swift; sourceTree = "<group>"; };
-		DA7EBF0227652D9200CA69DB /* ConusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA7EBF0F27652F1400CA69DB /* WolframCodeTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframCodeTestCase.swift; sourceTree = "<group>"; };
 		DA7EBF122765949800CA69DB /* Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit.swift; sourceTree = "<group>"; };
 		DA7EBF152765950C00CA69DB /* Array+Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Bit.swift"; sourceTree = "<group>"; };
@@ -78,13 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA7EBEF927652D9200CA69DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,7 +74,6 @@
 			children = (
 				DA7EBEE427652D9100CA69DB /* Conus */,
 				DA7EBEF527652D9200CA69DB /* ConusTests */,
-				DA7EBEFF27652D9200CA69DB /* ConusUITests */,
 				DA7EBEE327652D9100CA69DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,7 +83,6 @@
 			children = (
 				DA7EBEE227652D9100CA69DB /* Conus.app */,
 				DA7EBEF227652D9200CA69DB /* ConusTests.xctest */,
-				DA7EBEFC27652D9200CA69DB /* ConusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,15 +119,6 @@
 				DA7EBF192765A09000CA69DB /* RuleGenerationTests.swift */,
 			);
 			path = ConusTests;
-			sourceTree = "<group>";
-		};
-		DA7EBEFF27652D9200CA69DB /* ConusUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DA7EBF0027652D9200CA69DB /* ConusUITests.swift */,
-				DA7EBF0227652D9200CA69DB /* ConusUITestsLaunchTests.swift */,
-			);
-			path = ConusUITests;
 			sourceTree = "<group>";
 		};
 		DA7EBF112765948600CA69DB /* model */ = {
@@ -207,24 +177,6 @@
 			productReference = DA7EBEF227652D9200CA69DB /* ConusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DA7EBEFB27652D9200CA69DB /* ConusUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA7EBF0C27652D9200CA69DB /* Build configuration list for PBXNativeTarget "ConusUITests" */;
-			buildPhases = (
-				DA7EBEF827652D9200CA69DB /* Sources */,
-				DA7EBEF927652D9200CA69DB /* Frameworks */,
-				DA7EBEFA27652D9200CA69DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA7EBEFE27652D9200CA69DB /* PBXTargetDependency */,
-			);
-			name = ConusUITests;
-			productName = ConusUITests;
-			productReference = DA7EBEFC27652D9200CA69DB /* ConusUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,10 +191,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					DA7EBEF127652D9200CA69DB = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = DA7EBEE127652D9100CA69DB;
-					};
-					DA7EBEFB27652D9200CA69DB = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = DA7EBEE127652D9100CA69DB;
 					};
@@ -263,7 +211,6 @@
 			targets = (
 				DA7EBEE127652D9100CA69DB /* Conus */,
 				DA7EBEF127652D9200CA69DB /* ConusTests */,
-				DA7EBEFB27652D9200CA69DB /* ConusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,13 +226,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DA7EBEF027652D9200CA69DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA7EBEFA27652D9200CA69DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,15 +260,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA7EBEF827652D9200CA69DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA7EBF0127652D9200CA69DB /* ConusUITests.swift in Sources */,
-				DA7EBF0327652D9200CA69DB /* ConusUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -336,11 +267,6 @@
 			isa = PBXTargetDependency;
 			target = DA7EBEE127652D9100CA69DB /* Conus */;
 			targetProxy = DA7EBEF327652D9200CA69DB /* PBXContainerItemProxy */;
-		};
-		DA7EBEFE27652D9200CA69DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA7EBEE127652D9100CA69DB /* Conus */;
-			targetProxy = DA7EBEFD27652D9200CA69DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -532,7 +458,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XC37WA9QLK;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,7 +483,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XC37WA9QLK;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,52 +496,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Conus.app/Conus";
-			};
-			name = Release;
-		};
-		DA7EBF0D27652D9200CA69DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XC37WA9QLK;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.dmp.ConusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Conus;
-			};
-			name = Debug;
-		};
-		DA7EBF0E27652D9200CA69DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XC37WA9QLK;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.dmp.ConusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Conus;
 			};
 			name = Release;
 		};
@@ -645,15 +525,6 @@
 			buildConfigurations = (
 				DA7EBF0A27652D9200CA69DB /* Debug */,
 				DA7EBF0B27652D9200CA69DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA7EBF0C27652D9200CA69DB /* Build configuration list for PBXNativeTarget "ConusUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA7EBF0D27652D9200CA69DB /* Debug */,
-				DA7EBF0E27652D9200CA69DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
