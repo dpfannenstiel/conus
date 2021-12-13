@@ -1,6 +1,6 @@
 # README.md
 
-Conus is an implementation of [Wolfram Codes](https://en.wikipedia.org/wiki/Wolfram_code).  The system begins with Rule 31.
+Conus is an implementation of [Wolfram Codes](https://en.wikipedia.org/wiki/Wolfram_code).  The system begins with Rule 30.
 
 The UI allows the user to set the codes using a Bit-wise interface.  Once the bit has been changed the code value in the title will update and the generations of the cellular automata be redisplayed.  The Bit-wise interface is a [Big Endian](https://en.wikipedia.org/wiki/Endianness).  From an initial installation selection the 5th bit results in the sequence [off, off, off, on, off, on, on, off] or Rule 22 and is also visually appealing.
 
