@@ -32,7 +32,7 @@ Instead development was structured around issues of Swift architecture.  `Wolfra
 
 ### UI
 
-The UI was written in SwiftUI, because if I'm going to spend a weekend writing code I'm going to work on my developing competencies.  The repeatedly used view to edit the `WolframCode` has been extrapolated into a `WolframCodeView`.  Editing the settings for generation are non-destructive to the state of the parent view.
+The UI was written in SwiftUI.  The repeatedly used view to edit the `WolframCode` has been abstracted into a `WolframCodeView`.  Editing the settings for generation are non-destructive to the state of the parent view.
 
 There are opportunities in the UI for initial layout of the scrollview and to increase the performance when changing the generation count.
 
